@@ -3,20 +3,20 @@ import { Injectable } from '@angular/core';
 import { Favorite } from './favorite';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EventsService {
-  eventBaseUrl:string='https://app.ticketmaster.com/discovery/v2/'
-  key:string='jGarcrXM4Z2Btog36xqijTCYxLX557MR'
-  favorites:Favorite[]=[];
-  constructor(private http:HttpClient) { }
+  eventBaseUrl: string = 'https://app.ticketmaster.com/discovery/v2/events';
+  key: string = 'jGarcrXM4Z2Btog36xqijTCYxLX557MR';
+  favorites: Favorite[] = [];
+  constructor(private http: HttpClient) {}
 
-  getEvents=(searchTerm:string)=>{
+  getEvents = (searchTerm: string) => {
     return this.http.get(this.eventBaseUrl, {
-      params:{
-        apikey:this.key,
+      params: {
+        apikey: this.key,
         keyword: searchTerm,
-      }
+      },
     });
   };
 }

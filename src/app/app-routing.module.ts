@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'favorites', component: BucketListComponent },
-  { path: 'event-list', component: EventsListComponent },
+  { path: 'events-list', component: EventsListComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },
 ];

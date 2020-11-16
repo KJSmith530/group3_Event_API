@@ -5,19 +5,21 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-search-criteria',
   templateUrl: './search-criteria.component.html',
-  styleUrls: ['./search-criteria.component.css']
+  styleUrls: ['./search-criteria.component.css'],
 })
 export class SearchCriteriaComponent implements OnInit {
-  @Output() submitEvent= new EventEmitter<string>();
-  constructor(private router:Router) { }
+  @Output() submitEvent = new EventEmitter<string>();
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  getSearchTerm=(form:NgForm):void=>{
-    // console.log(form)
-    this.submitEvent.emit(form.value.searchTerm)
-    this.router.navigate(['/events-list'])
-  }
-
+  getSearchTerm = (form: NgForm): void => {
+    console.log(form.value.term);
+    // this.submitEvent.emit(form.value.term);
+    this.router.navigate(['/events-list'], {
+      queryParams: {
+        term: form.value.term,
+      },
+    });
+  };
 }
