@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { EventsService } from '../events.service';
 
 @Component({
@@ -8,13 +8,12 @@ import { EventsService } from '../events.service';
   styleUrls: ['./events-list.component.css'],
 })
 export class EventsListComponent implements OnInit {
-  eventData: any;
   constructor(
     private eventsService: EventsService,
-    private router: Router,
     private route: ActivatedRoute
   ) {}
 
+  eventData: any = null;
   ngOnInit(): void {
     this.route.queryParamMap.subscribe((response) => {
       let queryParams = response;

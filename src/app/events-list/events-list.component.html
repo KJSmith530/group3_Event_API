@@ -1,2 +1,5 @@
-<!-- <app-event *ngFor="let event of eventData?.data" [eventRef]="event"></app-event> -->
 <app-search-criteria></app-search-criteria>
+<app-event
+  *ngFor="let event of eventData?._embedded.events"
+  [eventRef]="event"
+></app-event>
