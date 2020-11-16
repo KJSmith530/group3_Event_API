@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchCriteriaComponent } from './search-criteria/search-criteria.component';
 import { EventsListComponent } from './events-list/events-list.component';
 import { BucketListComponent } from './bucket-list/bucket-list.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BucketListComponent } from './bucket-list/bucket-list.component';
     HomeComponent,
     SearchCriteriaComponent,
     EventsListComponent,
-    BucketListComponent
+    BucketListComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
