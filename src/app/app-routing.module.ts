@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'favorites', component: BucketListComponent },
   { path: 'event-list', component: EventsListComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
