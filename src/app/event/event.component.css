@@ -1,10 +1,69 @@
 .images {
   width: 400px;
   height: 400px;
+  border-right: solid black 70px;
 }
 
 .event-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 5px;
+  position: relative;
+
+  /* width: 30%; */
+}
+
+.fa-fire {
+  color: white;
+}
+
+.list-item {
+  list-style: none;
+  width: 500px;
+}
+
+.fire-logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 370px;
+  right: 7px;
+  font-size: 70px;
+}
+
+.unclicked {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 370px;
+  right: 26px;
+}
+
+.eventP {
+  font-size: 20px;
+}
+
+.fa-caret-down {
+  font-size: 60px;
+  position: absolute;
+  bottom: 122px;
+  right: 35px;
+}
+
+.drop-down {
+  display: none;
+}
+
+.titleInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ticket {
+  height: 60px;
+  position: absolute;
+  bottom: 245px;
+  right: 24px;
 }

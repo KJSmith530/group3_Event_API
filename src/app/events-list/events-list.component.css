@@ -8,10 +8,20 @@ body {
   list-style: none;
   flex-wrap: wrap;
 } */
-
+/* 
 .event-container {
   display: grid;
   grid-template-rows: auto auto;
   grid-auto-flow: column;
   overflow-x: scroll;
+} */
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-container {
+  margin: auto;
+  /* width: 30%; */
 }
