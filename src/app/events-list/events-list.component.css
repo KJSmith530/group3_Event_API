@@ -3,8 +3,15 @@ body {
   padding: 0px;
 }
 
-.event-container {
+/* .event-container {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
+.event-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  overflow-x: scroll;
 }

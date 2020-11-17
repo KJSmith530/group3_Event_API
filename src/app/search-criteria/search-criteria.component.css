@@ -1,0 +1,22 @@
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Raleway Dots", cursive;
+  font-size: 40px;
+}
+
+.link,
+p {
+  text-decoration: none;
+  color: #86bbdf;
+}
+
+#term {
+  height: 40px;
+  width: 300px;
+}
+
+.search-button {
+  height: 46px;
+}

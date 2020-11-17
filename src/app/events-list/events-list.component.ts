@@ -25,13 +25,4 @@ export class EventsListComponent implements OnInit {
         });
     });
   }
-
-  // search = (term: string) => {
-  //   console.log('test');
-  //   this.router.navigate(['/events-list'], {
-  //     queryParams: {
-  //       term: term,
-  //     },
-  //   });
-  // };
 }
