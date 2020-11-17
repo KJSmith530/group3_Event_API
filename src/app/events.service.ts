@@ -19,4 +19,26 @@ export class EventsService {
       },
     });
   };
+
+  editFavorites=(favorite:Favorite):void=>{
+    let index = this.favorites.findIndex((item)=>{
+      return item.id === favorite.id;
+    });
+    if(index === -1){
+      this.favorites.push(favorite);
+    }else{
+      this.favorites.splice(index, 1);
+    }console.log(this.favorites);
+  }
+
+  // toggleFavorite=(favorite:Favorite):void=>{
+  //   let index: number = this.favorites.findIndex((item)=>{
+  //     return item === favorite;
+  //   });
+  //   this.favorites[index].isFavorite=!this.favorites[index].isFavorite;
+  // }
+
+  getFavorites=()=>{
+   return this.favorites;
+  }
 }

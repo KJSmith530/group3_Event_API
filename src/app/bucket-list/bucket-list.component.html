@@ -1,1 +1,9 @@
-<p>bucket-list works!</p>
+<div *ngFor="let favorite of favorites; index as i">
+  <p class="eventP">
+    {{ favorite.title }}
+  </p>
+  <p>
+    {{ favorite.date }}
+  </p>
+  <i class="fas fa-dumpster-fire" (click)="toggleFavorite(favorite)"></i>
+</div>

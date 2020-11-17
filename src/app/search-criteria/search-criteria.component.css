@@ -14,9 +14,11 @@ p {
 
 #term {
   height: 40px;
-  width: 300px;
+  width: 375px;
+  border-radius: 10px;
 }
 
 .search-button {
   height: 46px;
+  border-radius: 10px;
 }
