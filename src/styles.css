@@ -4,7 +4,6 @@ body {
   margin: 0px;
   padding: 0px;
   color: white;
-  background-color: black;
-  background-image: url("assets/backgroundImg.png");
-  background-size: cover;
+  background-color: darkblue;
+  /* background-image: url("assets/bg6.png"); */
 }

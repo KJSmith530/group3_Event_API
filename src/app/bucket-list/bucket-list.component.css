@@ -1,3 +1,45 @@
 .fa-dumpster-fire {
   font-size: 50px;
 }
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  border-right: solid black 60px;
+}
+
+.favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.event-container {
+  display: flex;
+  width: 300px;
+  margin: 40px;
+}
+
+.eventP {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
+}
+
+.fa-caret-down {
+  font-size: 60px;
+  /* position: absolute;
+  bottom: 122px;
+  right: 35px; */
+}
+
+.drop-down {
+  display: none;
+}

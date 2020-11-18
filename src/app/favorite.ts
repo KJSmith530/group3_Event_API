@@ -1,7 +1,9 @@
 export interface Favorite {
-    url:string;
-    date:string;
-    title:string;
-    id:string;
-    isFavorite:boolean;
+  img: any;
+  url: string;
+  date: string;
+  title: string;
+  id: string;
+  venue: string;
+  detail: string;
 }
