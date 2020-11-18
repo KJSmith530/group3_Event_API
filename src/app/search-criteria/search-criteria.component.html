@@ -1,4 +1,5 @@
 <nav class="nav-list">
+  <a class="link" routerLink="/home">Home</a>
   <form #searchForm="ngForm" (ngSubmit)="getSearchTerm(searchForm)">
     <input
       type="text"
@@ -9,6 +10,6 @@
     />
     <button class="search-button">Find Event</button>
   </form>
-  <a class="link" routerLink="/home">Home</a>
-  <a class="link" routerLink="/bucket-list">View Your Bucket List</a>
+
+  <a class="link" routerLink="/bucket-list">Bucket List</a>
 </nav>

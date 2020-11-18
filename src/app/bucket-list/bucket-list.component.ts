@@ -10,6 +10,7 @@ import { Favorite } from '../favorite';
 export class BucketListComponent implements OnInit {
   favorites: Favorite[] = [];
   moreInfo = false;
+  showIndex: number = -1;
 
   constructor(private eventsService: EventsService) {}
 
@@ -23,5 +24,13 @@ export class BucketListComponent implements OnInit {
 
   toggleFavorite = (favorite: Favorite): void => {
     this.eventsService.editFavorites(favorite);
+  };
+
+  setShowIndex = (index: number) => {
+    if (this.showIndex === index) {
+      this.showIndex = -1;
+    } else {
+      this.showIndex = index;
+    }
   };
 }

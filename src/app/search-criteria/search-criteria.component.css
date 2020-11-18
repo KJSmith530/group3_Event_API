@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Raleway Dots", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 40px;
 }
 
@@ -14,11 +14,19 @@ p {
 
 #term {
   height: 40px;
-  width: 375px;
+  width: 175px;
   border-radius: 10px;
 }
 
 .search-button {
   height: 46px;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #term {
+    height: 40px;
+    width: 375px;
+    border-radius: 10px;
+  }
 }

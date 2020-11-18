@@ -25,7 +25,9 @@
       (click)="toggleFavorite(eventRef)"
     />
     <i class="fas fa-caret-down" (click)="moreInfo = !moreInfo"></i>
-    <img class="ticket" src="/assets/Tickets.svg" alt="" />
+    <a href="{{ eventRef.url }}"
+      ><img class="ticket" src="/assets/Tickets.svg" alt=""
+    /></a>
   </div>
   <div class="event-info" [class.drop-down]="!moreInfo">
     <p>Venue:{{ eventRef._embedded.venues[0].name }}</p>

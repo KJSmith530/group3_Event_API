@@ -4,6 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   color: white;
-  background-color: darkblue;
-  /* background-image: url("assets/bg6.png"); */
+  background-image: url("/assets/bg6.jpg");
+  background-attachment: fixed;
+  font-family: "Open Sans Condensed", sans-serif;
 }
