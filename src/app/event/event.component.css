@@ -7,6 +7,10 @@
   border-top: solid black 5px;
 }
 
+.images:hover {
+  box-shadow: 5px 5px 10px white;
+  transition: 0.2s;
+}
 .event-container {
   display: flex;
   flex-direction: column;
@@ -28,7 +32,7 @@
   height: 100px;
   width: 100px;
   position: absolute;
-  bottom: 370px;
+  bottom: 424px;
   right: 0px;
   font-size: 70px;
 }
@@ -37,7 +41,7 @@
   height: 60px;
   width: 60px;
   position: absolute;
-  bottom: 370px;
+  bottom: 424px;
   right: 20px;
 }
 
@@ -48,7 +52,7 @@
 .fa-caret-down {
   font-size: 60px;
   position: absolute;
-  bottom: 122px;
+  bottom: 181px;
   right: 30px;
 }
 
@@ -65,6 +69,6 @@
 .ticket {
   height: 60px;
   position: absolute;
-  bottom: 245px;
+  bottom: 306px;
   right: 20px;
 }

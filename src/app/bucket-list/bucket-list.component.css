@@ -4,7 +4,7 @@
 
 .fa-dumpster-fire {
   font-size: 30px;
-  top: 8px;
+  top: 35px;
   right: -54px;
   position: absolute;
 }
@@ -48,7 +48,7 @@
   font-size: 60px;
   position: absolute;
   bottom: 130px;
-  right: -50px;
+  right: -53px;
 }
 
 .drop-down {
@@ -63,6 +63,6 @@
 .ticket {
   height: 60px;
   position: absolute;
-  top: 110px;
+  top: 123px;
   right: -65px;
 }

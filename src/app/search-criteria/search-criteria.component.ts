@@ -19,7 +19,9 @@ export class SearchCriteriaComponent implements OnInit {
     this.router.navigate(['/events-list'], {
       queryParams: {
         term: form.value.term,
+         
       },
     });
+    form.reset();
   };
 }
