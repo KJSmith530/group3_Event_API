@@ -3,19 +3,6 @@ body {
   padding: 0px;
 }
 
-/* .event-container {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-} */
-/* 
-.event-container {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-auto-flow: column;
-  overflow-x: scroll;
-} */
-
 .event-container {
   display: flex;
   flex-wrap: wrap;
@@ -23,5 +10,12 @@ body {
 
 .div-container {
   margin: auto;
-  /* width: 30%; */
+}
+
+.search-bar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
 }

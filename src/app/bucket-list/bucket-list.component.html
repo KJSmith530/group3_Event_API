@@ -1,9 +1,16 @@
-<div *ngFor="let favorite of favorites; index as i">
-  <p class="eventP">
-    {{ favorite.title }}
-  </p>
-  <p>
-    {{ favorite.date }}
-  </p>
-  <i class="fas fa-dumpster-fire" (click)="toggleFavorite(favorite)"></i>
+<div class="favorite-container">
+  <ul class="event-container" *ngFor="let favorite of favorites; index as i">
+    <li class="eventP">
+      <img class="img-container" src="{{ favorite.img }}" alt="eventImage" />
+      <p>{{ favorite.title }}</p>
+      <p>{{ favorite.date }}</p>
+      <i class="fas fa-dumpster-fire" (click)="toggleFavorite(favorite)"></i>
+      <i class="fas fa-caret-down" (click)="moreInfo = !moreInfo"></i>
+    </li>
+    <div class="event-info" [class.drop-down]="!moreInfo">
+      <p>Venue:{{ favorite.venue }}</p>
+      <p>Details:{{ favorite.detail }}</p>
+    </div>
+  </ul>
 </div>
+<app-search-criteria class="search-bar"></app-search-criteria>
